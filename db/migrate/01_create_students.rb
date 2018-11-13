@@ -1,4 +1,4 @@
-require_relative '../db/migrate/01_create_students'
+require_relative '../db/school-test.sqlite'
 class CreateStudents < ActiveRecord::Migration[5.1]
   connection = ActiveRecord::Base.establish_connection(
     :adapter => "sqlite3",
