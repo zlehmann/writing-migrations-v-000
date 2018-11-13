@@ -17,6 +17,11 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   ActiveRecord::Base.connection.execute(sql)
 
   def change
-
+    create_table :students do |t|
+      t.string :name
+      t.integer :grade 
+      t.string :birthdate 
+      t.datetime :birthday 
+    end
   end
 end
