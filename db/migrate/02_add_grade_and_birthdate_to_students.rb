@@ -9,8 +9,7 @@ class AddGradeAndBirthdateToStudents < ActiveRecord::Migration[5.1]
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade INTEGER,
-      birthdate TEXT,
-      birthday DATETIME
+      birthdate TEXT
     )
   SQL
 
