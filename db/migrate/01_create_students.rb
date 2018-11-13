@@ -1,7 +1,7 @@
 class CreateStudents < ActiveRecord::Migration[5.1]
   connection = ActiveRecord::Base.establish_connection(
     :adapter => "sqlite3",
-    :database => "db/school-test.sqlite"
+    :database => "db/school-test.db"
   )
 
   sql = <<-SQL
@@ -12,4 +12,8 @@ class CreateStudents < ActiveRecord::Migration[5.1]
   SQL
 
   ActiveRecord::Base.connection.execute(sql)
+
+  def change
+
+  end
 end
