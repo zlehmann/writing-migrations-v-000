@@ -8,9 +8,6 @@ class CreateStudents < ActiveRecord::Migration[5.1]
     CREATE TABLE IF NOT EXISTS students (
       id INTEGER PRIMARY KEY,
       name TEXT,
-      grade INTEGER,
-      birthdate TEXT,
-      birthday DATETIME
     )
   SQL
 
