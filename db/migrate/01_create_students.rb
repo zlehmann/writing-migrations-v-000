@@ -14,5 +14,5 @@ class CreateStudents < ActiveRecord::Migration[5.1]
     )
   SQL
 
-  DB[connection].execute(sql)
+  ActiveRecord::Base.connection.execute(sql)
 end
